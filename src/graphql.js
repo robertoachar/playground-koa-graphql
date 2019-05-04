@@ -4,7 +4,7 @@ import { buildSchema } from 'graphql';
 
 const router = KoaRouter();
 
-router.post(
+router.all(
   '/graphql',
   graphqlHttp({
     schema: buildSchema(`
