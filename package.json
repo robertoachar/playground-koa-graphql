@@ -23,6 +23,7 @@
     "url": "https://github.com/robertoachar/playground-koa-graphql/issues"
   },
   "dependencies": {
+    "dotenv": "8.0.0",
     "esm": "3.2.22",
     "winston": "3.2.1"
   },
