@@ -1,14 +1,14 @@
 import KoaRouter from 'koa-router';
 import graphqlHttp from 'koa-graphql';
 
-import CountrySchema from './country/CountrySchema';
+import schema from './schema';
 
 const router = KoaRouter();
 
 router.all(
   '/graphql',
   graphqlHttp({
-    schema: CountrySchema,
+    schema,
     graphiql: true
   })
 );
