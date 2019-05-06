@@ -5,13 +5,13 @@ import CountryMutations from './country/CountryMutations';
 
 const Schema = new GraphQLSchema({
   query: new GraphQLObjectType({
-    name: 'RootQuery',
+    name: 'Query',
     fields: {
       ...CountryQueries
     }
   }),
   mutation: new GraphQLObjectType({
-    name: 'RootMutation',
+    name: 'Mutation',
     fields: {
       ...CountryMutations
     }

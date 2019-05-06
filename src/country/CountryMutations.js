@@ -1,6 +1,6 @@
 import { GraphQLNonNull } from 'graphql';
 
-import { CountryCreateInput } from './CountryInput';
+import CountryCreateInputType from './CountryCreateInputType';
 import CountryType from './CountryType';
 import countries from './countries';
 
@@ -9,7 +9,7 @@ const CountryMutations = {
     type: CountryType,
     args: {
       input: {
-        type: GraphQLNonNull(CountryCreateInput)
+        type: GraphQLNonNull(CountryCreateInputType)
       }
     },
     resolve: (root, { input }) => {
